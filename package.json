@@ -1,0 +1,30 @@
+{
+	"name": "middle.messenger.praktikum.yandex",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel ./index.html --no-cache",
+		"build": "parcel build ./index.html --no-cache",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Polkashi/middle.messenger.praktikum.yandex.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Polkashi/middle.messenger.praktikum.yandex/issues"
+	},
+	"homepage": "https://github.com/Polkashi/middle.messenger.praktikum.yandex#readme",
+	"devDependencies": {
+		"@anikin/parcel-transformer-handlebars": "^1.0.9",
+		"@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+		"@parcel/transformer-inline-string": "^2.8.3",
+		"parcel": "^2.8.3"
+	},
+	"dependencies": {
+		"handlebars": "^4.7.7"
+	}
+}
