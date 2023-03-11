@@ -5,4 +5,10 @@
 @import 'reset';
 @import 'global';
 
+//shared
+@import '/src/scss/shared/card';
+
+//components
+@import '/src/components/Button/Button.scss';
+@import '/src/components/TextField/textField.scss';
 @import '/src/components/SwitcherPages/switcherPages.scss';
