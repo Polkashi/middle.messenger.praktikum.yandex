@@ -1,4 +1,10 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./userSettings.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const UserSettingsPage = renderHtml(html)
+export const UserSettingsPage = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

@@ -1,4 +1,10 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./chatsList.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const ChatsListPage = renderHtml(html)
+export const ChatsListPage = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

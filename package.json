@@ -22,6 +22,7 @@
 		"@anikin/parcel-transformer-handlebars": "^1.0.9",
 		"@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
 		"@parcel/transformer-inline-string": "^2.8.3",
+		"@parcel/transformer-sass": "^2.8.3",
 		"parcel": "^2.8.3"
 	},
 	"dependencies": {

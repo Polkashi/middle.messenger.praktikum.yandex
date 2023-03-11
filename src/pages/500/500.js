@@ -1,4 +1,10 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./500.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const Error500Page = renderHtml(html)
+export const Error500Page = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

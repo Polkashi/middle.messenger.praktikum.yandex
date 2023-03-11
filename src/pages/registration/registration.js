@@ -1,4 +1,10 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./registration.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const RegistrationPage = renderHtml(html)
+export const RegistrationPage = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

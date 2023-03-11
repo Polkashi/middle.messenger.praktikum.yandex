@@ -1,0 +1,13 @@
+<button class='switcherPages'>
+	<span
+		class='material-symbols-outlined'
+		id='switcherPagesIcon'
+	>filter_none</span>
+	<ul class='switcherPages__links' id='switcherPagesLinks'>
+		{{#each links}}
+			<li class='switcherPages__item'>
+				<a href={{href}} class='switcherPages__link'>{{name}}</a>
+			</li>
+		{{/each}}
+	</ul>
+</button>

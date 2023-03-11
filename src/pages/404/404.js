@@ -1,4 +1,10 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./404.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const Error404Page = renderHtml(html)
+export const Error404Page = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

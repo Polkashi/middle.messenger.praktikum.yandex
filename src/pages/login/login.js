@@ -1,4 +1,11 @@
+import Handlebars from 'handlebars'
 import html from 'bundle-text:./login.hbs'
-import { renderHtml } from '/src/helpers/renderHtml'
+import { links } from '/src/consts/global.js'
 
-export const LoginPage = renderHtml(html)
+import '/src/components/SwitcherPages/switcherPages'
+export const LoginPage = () => {
+	const context = {
+		links,
+	}
+	return Handlebars.compile(html)(context)
+}

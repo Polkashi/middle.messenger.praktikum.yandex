@@ -11,24 +11,24 @@ root.innerHTML = ''
 
 switch (window.location.pathname) {
 	case '/login':
-		root.innerHTML = LoginPage
+		root.innerHTML = LoginPage()
 		break
 	case '/registration':
-		root.innerHTML = RegistrationPage
+		root.innerHTML = RegistrationPage()
 		break
 	case '/chatsList':
-		root.innerHTML = ChatsListPage
+		root.innerHTML = ChatsListPage()
 		break
 	case '/userSettings':
-		root.innerHTML = UserSettingsPage
+		root.innerHTML = UserSettingsPage()
 		break
 	case '/404':
-		root.innerHTML = Error404Page
+		root.innerHTML = Error404Page()
 		break
 	case '/500':
-		root.innerHTML = Error500Page
+		root.innerHTML = Error500Page()
 		break
 	default:
-		root.innerHTML = LoginPage
+		root.innerHTML = LoginPage()
 		break
 }
