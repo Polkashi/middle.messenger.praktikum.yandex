@@ -1,3 +1,4 @@
+// pages
 import { LoginPage } from '/src/pages/login/login'
 import { RegistrationPage } from '/src/pages/registration/registration'
 import { UserSettingsPage } from '/src/pages/userSettings/userSettings'
@@ -5,8 +6,12 @@ import { ChatsListPage } from '/src/pages/chatsList/chatsList'
 import { Error404Page } from '/src/pages/404/404'
 import { Error500Page } from '/src/pages/500/500'
 
-const root = document.getElementById('root')
+// components
+import '/src/components/SwitcherPages/switcherPages'
+import '/src/components/TextField/TextField'
+import '/src/components/Button/Button'
 
+const root = document.getElementById('root')
 root.innerHTML = ''
 
 switch (window.location.pathname) {

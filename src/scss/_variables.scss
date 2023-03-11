@@ -1,11 +1,19 @@
 // colors
 $primary: #655dbb;
-$secondary: #183a1d;
-$gray1: #fbfbfb;
-$gray2: #efefef;
+$secondary: #bface2;
+$base: #ecf2ff;
 $darkgray: #eee;
-$lightGreen: #e1eedd;
-$base: #fefbe9;
+
+// $gray1: #fbfbfb;
+// $gray2: #efefef;
+// $lightGreen: #e1eedd;
+// $base: #fefbe9;
+
+// status-colors
+$error: #eb6060;
+$warning: #f7e463;
+$success: #7cd992;
+$disabled: #a8a8a8;
 
 // border
 $borderRadius: 4px;

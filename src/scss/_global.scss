@@ -1,6 +1,11 @@
+//shared
+@import '/src/scss/shared/card';
+@import '/src/scss/shared/status-colors';
+
 body {
 	font-family: 'Ubuntu Mono', monospace;
 	font-weight: 400;
+	font-size: 16px;
 }
 
 .container {
@@ -9,7 +14,8 @@ body {
 	margin: 0 auto;
 }
 
-.container__login {
+.container__login,
+.container__registration {
 	display: flex;
 	align-items: center;
 	justify-content: center;
