@@ -30,4 +30,4 @@
 
 - Деплой проекта - [messenger](https://chimerical-donut-95bd7a.netlify.app)
 
-- Cсылка на Pull Request - [Pull Request sprint_1]('https://github.com/Polkashi/middle.messenger.praktikum.yandex/pull/2')
+- Cсылка на Pull Request - [Pull Request sprint_1](https://github.com/Polkashi/middle.messenger.praktikum.yandex/pull/2)
