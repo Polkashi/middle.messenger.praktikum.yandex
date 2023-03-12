@@ -14,6 +14,10 @@
 @import '/src/pages/chatsList/chatsList.scss';
 
 //components
+@import '/src/components/DropDown/dropDown.scss';
+@import '/src/components/Avatar/avatar.scss';
+@import '/src/components/ChatItem/chatItem.scss';
+@import '/src/components/Message/message.scss';
 @import '/src/components/Button/Button.scss';
 @import '/src/components/TextField/textField.scss';
 @import '/src/components/SwitcherPages/switcherPages.scss';

@@ -8,8 +8,9 @@ import { Error500Page } from '/src/pages/500/500'
 
 // components
 import '/src/components/SwitcherPages/switcherPages'
-import '/src/components/TextField/TextField'
-import '/src/components/Button/Button'
+import '/src/components/TextField/textField'
+import '/src/components/Button/button'
+import '/src/components/DropDown/dropDown'
 
 const root = document.getElementById('root')
 root.innerHTML = ''

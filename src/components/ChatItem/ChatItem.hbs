@@ -1,0 +1,17 @@
+<article class='chatItem'>
+	<div class='chatItem-wrap'>
+		{{> Avatar url=url class="chatItem-avatar"}}
+		<div class='chatItem-info'>
+			<div class='chatItem-top'>
+				<div class='chatItem-name'>{{name}}</div>
+				<div class='chatItem-date'>{{date}}</div>
+			</div>
+			<div class='chatItem-bottom'>
+				<div class='chatItem-lastMessage'>{{lastMessage}}</div>
+				<div class='chatItem-badge'>
+					<span>{{unreadable}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

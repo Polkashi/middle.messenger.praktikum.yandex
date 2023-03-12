@@ -1,0 +1,30 @@
+.dropDown {
+	@include boxShadow;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: $borderRadius;
+	overflow: hidden;
+	position: fixed;
+	height: auto;
+	opacity: 0;
+	background-color: #fff;
+	pointer-events: none;
+	margin: 0;
+	&.active {
+		display: flex;
+		pointer-events: all;
+		z-index: 10;
+		opacity: 1;
+	}
+}
+
+.modal-btn {
+	font-size: 14px;
+	padding: 12px;
+
+	&:hover {
+		background-color: $primary;
+		color: white;
+	}
+}

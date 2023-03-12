@@ -1,5 +1,9 @@
 <div class='textField'>
-	<label class='label'>{{title}}</label>
-	<input type={{type}} class={{class}} name={{name}} />
+	{{#if title}}
+		<label class='label'>{{title}}</label>
+		<input type={{type}} class={{class}} name={{name}} />
+	{{else}}
+		<input type={{type}} class={{class}} name={{name}} />
+	{{/if}}
 
 </div>
