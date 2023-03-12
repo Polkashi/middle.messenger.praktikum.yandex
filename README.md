@@ -28,5 +28,6 @@
 
 ## Проверка
 
-- Деплой проекта - [messenger](https://spiffy-kheer-564f95.netlify.app/)
-- Cсылка на Pull Request - [Pull Request sprint_1]('#')
+- Деплой проекта - [messenger](https://chimerical-donut-95bd7a.netlify.app)
+
+- Cсылка на Pull Request - [Pull Request sprint_1]('https://github.com/Polkashi/middle.messenger.praktikum.yandex/pull/2')
