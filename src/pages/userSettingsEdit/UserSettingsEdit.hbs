@@ -12,26 +12,25 @@
 			<ul class='elements-wrap__column userSetting__setting-list'>
 				<li class='userSetting__setting-item'>
 					<span>Почта</span>
-					{{>TextField  type='email' class='input__primary' name='email' }}
+					{{> TextField  type='email' class='input__primary' name='email' }}
 				</li>
 				<li class='userSetting__setting-item'>
 					<span>Логин</span>
-					{{>TextField  type='text' class='input__primary' name='login' }}
+					{{> TextField  type='text' class='input__primary' name='login' }}
 				</li>
 				<li class='userSetting__setting-item'>
 					<span>Имя</span>
-					{{>TextField  type='text' class='input__primary' name='first_name' }}
+					{{> TextField  type='text' class='input__primary' name='first_name' }}
 				</li>
 				<li class='userSetting__setting-item'>
 					<span>Фамилия</span>
-					{{>TextField  type='text' class='input__primary' name='second_name' }}
+					{{> TextField  type='text' class='input__primary' name='second_name' }}
 				</li>
 				<li class='userSetting__setting-item'>
 					<span>Телефон</span>
-					{{>TextField  type='tel' class='input__primary' name='phone' }}
+					{{> TextField  type='tel' class='input__primary' name='phone' }}
 				</li>
 			</ul>
-			{{changeVal}}
 			<div class='elements-wrap__column'>
 				{{> Button title='Изменить данные' filled='true' id='changeUserInfoBtnEdit'}}
 				{{> Button title='Изменить пароль' filled='true'}}

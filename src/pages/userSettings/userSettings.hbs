@@ -12,11 +12,7 @@
 			<ul class='elements-wrap__column userSetting__setting-list'>
 				<li class='userSetting__setting-item'>
 					<span>Почта</span>
-					{{#unless editMode}}
-					<span>Василий</span>
-					{{else}}
-					{{>TextField type='email' class='input__primary' name='email' }}
-					{{/unless}}
+					<span>asdasd@mail.ru</span>
 				</li>
 				<li class='userSetting__setting-item'>
 					<span>Логин</span>
@@ -35,7 +31,6 @@
 					<span>89455421228</span>
 				</li>
 			</ul>
-			{{changeVal}}
 			<div class='elements-wrap__column'>
 				{{> Button title='Изменить данные' filled='true' id='changeUserInfoBtn'}}
 				{{> Button title='Изменить пароль' filled='true'}}

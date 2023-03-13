@@ -43,14 +43,15 @@ switch (window.location.pathname) {
 		break
 }
 
-// убираем перезагрузку при сабмите форм
-const forms = document.querySelectorAll('.forms')
+document.addEventListener('DOMContentLoaded', e => {
+	// убираем перезагрузку при сабмите форм
+	const forms = document.forms
 
-console.log(forms)
-forms.forEach(form => {
-	form.addEventListener('click', e => {
-		console.log('click')
-		e.stopPropagation()
-		e.preventDefault()
+	Array.from(forms).forEach(form => {
+		form.addEventListener('click', e => {
+			console.log('click')
+			e.stopPropagation()
+			e.preventDefault()
+		})
 	})
 })

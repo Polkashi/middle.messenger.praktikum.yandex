@@ -28,8 +28,5 @@
 	},
 	"dependencies": {
 		"handlebars": "^4.7.7"
-	},
-	"alias": {
-    "process": false
- }
+	}
 }
