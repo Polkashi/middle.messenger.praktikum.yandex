@@ -46,11 +46,11 @@ switch (window.location.pathname) {
 // убираем перезагрузку при сабмите форм
 const forms = document.querySelectorAll('.forms')
 
+console.log(forms)
 forms.forEach(form => {
-	if (form) {
-		form.addEventListener('submit', e => {
-			console.log('form')
-			e.preventDefault()
-		})
-	}
+	form.addEventListener('click', e => {
+		console.log('click')
+		e.stopPropagation()
+		e.preventDefault()
+	})
 })

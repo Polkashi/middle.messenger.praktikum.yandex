@@ -49,7 +49,7 @@
 						{{> Message author='my' text='rock'}}
 						{{> Message author='my' text='...'}}
 					</div>
-					<form class='chatsList__selectedChat-footer form'>
+					<div class='chatsList__selectedChat-footer'>
 						<button
 							class='material-symbols-outlined'
 							id='chatsList__selectedChat-attachFileBtn'
@@ -59,9 +59,11 @@
 							{{> Button title='Файл' class='modal-btn' link='true'}}
 							{{> Button title='Локация' class='modal-btn' link='true'}}
 						{{/DropDown }}
-						{{> TextField type='text' class='input__primary' name='message' }}
+						<form class='form'>
+							{{> TextField type='text' class='input__primary' name='message' }}
+						</form>
 						<button class='material-symbols-outlined'>arrow_circle_right</button>
-					</form>
+					</div>
 				{{/if}}
 			</section>
 
