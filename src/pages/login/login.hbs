@@ -1,11 +1,13 @@
-<div class='container container__login'>
-	<div class='card'>
-		<h1 class='card-title'>Вход</h1>
-		<div class='elements-wrap__column'>
-			{{> TextField title='логин' type='text' class='input__primary' name='login' }}
-			{{> TextField title='пароль' type='password' class='input__primary' name='password' }}
-			{{> Button title='войти' filled='true'}}
+<main>
+	<div class='container container__login'>
+		<div class='card'>
+			<h1 class='card-title'>Вход</h1>
+			<form class='elements-wrap__column form'>
+				{{> TextField title='логин' type='text' class='input__primary' name='login' }}
+				{{> TextField title='пароль' type='password' class='input__primary' name='password' }}
+				{{> Button title='войти' filled='true'}}
+			</form>
 		</div>
+		<div>{{> SwitcherPages  }}</div>
 	</div>
-	<div>{{> SwitcherPages  }}</div>
-</div>
+</main>
