@@ -1,8 +1,8 @@
 // pages
 import { LoginPage } from '/src/pages/login/login'
 import { RegistrationPage } from '/src/pages/registration/registration'
-import { UserSettingsPage } from '/src/pages/userSettings/UserSettings'
-import { UserSettingsEditPage } from './pages/userSettingsEdit/UserSettingsEdit'
+import { UserSettingsPage } from '/src/pages/userSettings/userSettings'
+import { UserSettingsEditPage } from './pages/userSettingsEdit/userSettingsEdit'
 import { ChatsListPage } from '/src/pages/chatsList/chatsList'
 import { Error404Page } from '/src/pages/404/404'
 import { Error500Page } from '/src/pages/500/500'
