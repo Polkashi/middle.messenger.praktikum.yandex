@@ -15,7 +15,7 @@ import '/src/components/DropDown/dropDown'
 
 const root = document.getElementById('root')
 root.innerHTML = ''
-console.log(window.location.pathname)
+
 switch (window.location.pathname) {
 	case '/login':
 		root.innerHTML = LoginPage()
