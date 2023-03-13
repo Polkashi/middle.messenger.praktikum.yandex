@@ -1,5 +1,5 @@
 import Handlebars from 'handlebars'
-import html from 'bundle-text:./userSettings.hbs'
+import html from 'bundle-text:./UserSettings.hbs'
 import { links } from '/src/consts/global.js'
 import avatarBg from '/src/images/avatar-bg.jpg'
 
