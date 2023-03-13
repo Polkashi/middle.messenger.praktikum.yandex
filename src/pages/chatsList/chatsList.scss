@@ -62,6 +62,10 @@
 		border-top: 1px solid silver;
 		padding-top: 12px;
 	}
+	&__selectedChat-footerForm {
+		width: 100%;
+		display: flex;
+	}
 }
 
 .unSelectedChat-message {

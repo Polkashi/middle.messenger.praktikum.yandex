@@ -5,6 +5,10 @@
 @import 'reset';
 @import 'global';
 
+//shared
+@import '/src/scss/shared/card';
+@import '/src/scss/shared/status-colors';
+
 //pages
 @import '/src/pages/404/404.scss';
 @import '/src/pages/500/500.scss';
