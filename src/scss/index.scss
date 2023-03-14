@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'icons';
+@import 'reset';
+@import 'global';
+
+//shared
+@import 'card';
+@import 'status-colors';
+
+//pages
+@import '/src/pages/404/404.scss';
+@import '/src/pages/500/500.scss';
+@import '/src/pages/login/login.scss';
+@import '/src/pages/registration/registration.scss';
+@import '/src/pages/userSettings/userSettings.scss';
+@import '/src/pages/chatsList/chatsList.scss';
+
+//components
+@import '/src/components/DropDown/dropDown.scss';
+@import '/src/components/Avatar/avatar.scss';
+@import '/src/components/ChatItem/chatItem.scss';
+@import '/src/components/Message/message.scss';
+@import '/src/components/Button/button.scss';
+@import '/src/components/TextField/textField.scss';
+@import '/src/components/SwitcherPages/switcherPages.scss';

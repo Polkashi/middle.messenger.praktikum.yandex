@@ -1,0 +1,18 @@
+<main>
+	<div class='container container__registration'>
+		<div class='card'>
+			<h1 class='card-title'>Регистрация</h1>
+			<form class='elements-wrap__column form'>
+				{{>TextField title='почта' type='email' class='input__primary' name='email' }}
+				{{>TextField title='имя' type='text' class='input__primary' name='first_name' }}
+				{{>TextField title='фамилия' type='text' class='input__primary' name='second_name' }}
+				{{>TextField title='логин' type='text' class='input__primary' name='login' }}
+				{{>TextField title='телефон' type='tel' class='input__primary' name='phone' }}
+				{{>TextField title='пароль' type='password' class='input__primary' name='password' }}
+				{{>TextField title='повторите пароль' type='password' class='input__primary' name='dubl_password' }}
+				{{>Button title='Зарегистрироваться' filled='true'}}
+			</form>
+		</div>
+		<div>{{>SwitcherPages}}</div>
+	</div>
+</main>

@@ -1,0 +1,18 @@
+.card {
+	@include boxShadow;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	gap: 16px;
+	width: 400px;
+	margin: auto auto;
+	padding: 16px;
+	border-radius: $borderRadius * 2;
+}
+
+.card-title {
+	font-size: 22px;
+	font-weight: 700;
+}

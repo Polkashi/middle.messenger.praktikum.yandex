@@ -1,0 +1,73 @@
+<main>
+	<div class='container container__chatsList'>
+		<div class='chatsList'>
+			<aside class='chatsList__aside'>
+				<div class='chatsList__chats-profileLink'>
+					<a href='userSettings' class='link'>Профиль</a>
+				</div>
+				<div class='chatsList__chats-search'>
+					<form class='form'>
+						{{> TextField  type='text' class='input__primary' name='search-chat' }}
+					</form>
+				</div>
+				<div class='chatsList__chats-chats'>
+					<ul class='chatsList__chats-chats-wrap'>
+						{{#each usersList}}
+						{{> ChatItem name=name date=date lastMessage=lastMessage unreadable=unreadable }}
+						{{/each}} 
+					</ul>
+				</div>
+			</aside> 
+			<section class='chatsList__selectedChat'>
+				{{#if selectedChat}}
+				<div class='unSelectedChat-message'>Выберите чат чтобы отправить сообщение
+				</div>
+				{{else}}
+				<div class='chatsList__selectedChat-wrap'>
+					<div class='chatsList__selectedChat-header'>
+						<div class='chatsList__selectedChat-header-user'>
+							{{> Avatar url=currentAvatar class="chatItem-avatar"}}
+								{{#DropDown id='chatsList__selectedChat-menu'}}
+									<form class='form'>
+										{{> Button title='добавить пользователя' class='modal-btn' link='true'}}
+										{{> Button title='удалить пользователя' class='modal-btn' link='true'}}
+									</form>
+								{{/DropDown }}
+							<span>Вадим</span>
+						</div>
+						<div class='chatsList__selectedChat-header-btn'>
+							<button
+								class='material-symbols-outlined'
+								id='chatsList__selectedChat-btn'
+							>more_vert</button>
+						</div>
+					</div>
+					<div class='chatsList__selectedChat-body'>
+						{{> Message author='other' text='Hello, how are u?'}} 
+						{{> Message author='my' text='hi'}}
+						{{> Message author='other' text='clock'}}
+						{{> Message author='my' text='rock'}}
+						{{> Message author='my' text='...'}}
+					</div>
+					<div class='chatsList__selectedChat-footer'>
+						<button
+							class='material-symbols-outlined'
+							id='chatsList__selectedChat-attachFileBtn'
+						>attach_file</button>
+						{{#DropDown id='chatsList__selectedChat-attachFile'}}
+							{{> Button title='Фото и видео' class='modal-btn' link='true'}}
+							{{> Button title='Файл' class='modal-btn' link='true'}}
+							{{> Button title='Локация' class='modal-btn' link='true'}}
+						{{/DropDown }}
+						<form class='form'>
+							{{> TextField type='text' class='input__primary' name='message' }}
+						</form>
+						<button class='material-symbols-outlined'>arrow_circle_right</button>
+					</div>
+				{{/if}}
+			</section>
+
+			<div>{{> SwitcherPages}}</div>
+		</div>
+	</div>
+</main>

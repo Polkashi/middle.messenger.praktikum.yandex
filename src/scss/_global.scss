@@ -1,0 +1,63 @@
+body {
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.container__login,
+.container__registration,
+.container__userSetting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.container__errorPage {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container__chatsList {
+	height: 100vh;
+}
+
+.h100vh {
+	height: 100vh;
+}
+
+.elements-wrap__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 300px;
+	width: 100%;
+}
+
+.link {
+	color: $primary;
+	&:visited {
+		color: $primary;
+	}
+	&:hover {
+		color: lighten($primary, 10);
+	}
+	&:active {
+		color: $primary;
+	}
+}
+
+.form {
+	width: 100%;
+}

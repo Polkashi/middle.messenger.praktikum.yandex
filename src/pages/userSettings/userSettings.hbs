@@ -1,0 +1,43 @@
+<main>
+	<div class='container container__userSetting'>
+		<div class='card'>
+			<h1 class='card-title'>Настройки пользователя</h1>
+			<div>
+				<div class="userSetting__avatar">
+					<button class="userSetting__avatar-btn">Изменить фото</button>
+						<img src={{avatarBg}} alt="изображение пользователя">
+					
+				</div>
+			</div>
+			<ul class='elements-wrap__column userSetting__setting-list'>
+				<li class='userSetting__setting-item'>
+					<span>Почта</span>
+					<span>asdasd@mail.ru</span>
+				</li>
+				<li class='userSetting__setting-item'>
+					<span>Логин</span>
+					<span>loginname</span>
+				</li>
+				<li class='userSetting__setting-item'>
+					<span>Имя</span>
+					<span>fistname</span>
+				</li>
+				<li class='userSetting__setting-item'>
+					<span>Фамилия</span>
+					<span>lastname</span>
+				</li>
+				<li class='userSetting__setting-item'>
+					<span>Телефон</span>
+					<span>89455421228</span>
+				</li>
+			</ul>
+			<div class='elements-wrap__column'>
+				{{> Button title='Изменить данные' filled='true' id='changeUserInfoBtn'}}
+				{{> Button title='Изменить пароль' filled='true'}}
+				{{> Button title='Выйти' filled='true'}} 
+			</div>
+			<div>{{> SwitcherPages}}</div> 
+		</div>
+	</div>
+</main>
+
